@@ -26,6 +26,7 @@ div input {
   font-weight: 500;
   padding: 0.5rem;
   font-size: 1.5rem;
+  padding-left: 1rem;
 }
 
 select {
@@ -53,7 +54,7 @@ label {
   text-align: right;
 }
 
-.button {
+button {
   border-radius: 1.5rem;
   height: 2.5rem;
   width: 6.5rem;
