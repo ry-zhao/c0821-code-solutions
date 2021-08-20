@@ -40,3 +40,19 @@ img {
   padding-left: 20%;
   padding-right: 20%;
 }
+
+.padding-right-twenty-percent {
+  padding-right: 20%;
+}
+
+.karla {
+  font-family: Karla, sans-serif;
+}
+
+.f-size-three-rem {
+  font-size: 3rem;
+}
+
+.f-size-eighty-percent-rem {
+  font-size: 0.8rem;
+}
