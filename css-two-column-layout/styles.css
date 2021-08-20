@@ -1,0 +1,42 @@
+img {
+  width: 100%;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  width: 100%;
+}
+
+.col-fourth {
+  width: 25%;
+}
+
+.col-three-fourths {
+  width: 75%;
+}
+
+.col-half {
+  width: 50%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.margin-ten-percent {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.padding-fifteen-percent {
+  padding-left: 20%;
+  padding-right: 20%;
+}
