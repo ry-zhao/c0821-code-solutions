@@ -8,31 +8,37 @@ img {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 h3 {
-  line-height: 2rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-right: 5rem;
+  line-height: 1.5rem;
+  padding-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 0.9rem;
 }
 
 p {
-  line-height: 2rem;
+  margin-top: 0;
+  line-height: 1.5rem;
+  font-size: 0.82rem;
+  padding-right: 1.4rem;
+  font-weight: 400;
+  color: #7c7c7c;
 }
 
 button {
-  border: 2px solid #d24e47;
+  border: 1.5px solid #d24e47;
   color: #d24e47;
   background-color: white;
-  margin-top: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  margin-left: auto;
-  margin-right: auto;
+  height: 2.5rem;
+  width: 12rem;
+  margin: auto;
+  margin-top: 2.5rem;
+  font-weight: 700;
 }
 
 .container {
@@ -69,17 +75,18 @@ button {
   text-align: left;
 }
 
-.margin-lr-five-percent {
-  margin-left: 10%;
-  margin-right: 10%;
+.margin-lr {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .padding-right-twenty-percent {
-  /* padding-right: 100rem; */
+  margin-left: 0.2rem;
 }
 
 #header {
   margin: auto;
   width: 60%;
+  padding: 0;
   margin-bottom: 2.5rem;
 }
