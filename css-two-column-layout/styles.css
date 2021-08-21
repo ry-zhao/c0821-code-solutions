@@ -1,9 +1,42 @@
+body {
+  font-family: Karla, sans-serif;
+  text-align: center;
+}
+
 img {
   width: 100%;
 }
 
+h1 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  line-height: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 5rem;
+}
+
+p {
+  line-height: 2rem;
+}
+
+button {
+  border: 2px solid #d24e47;
+  color: #d24e47;
+  background-color: white;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .container {
-  width: 70%;
+  width: 60%;
   margin: auto;
 }
 
@@ -11,8 +44,9 @@ img {
   display: flex;
 }
 
-.col {
+.col-full {
   width: 100%;
+  text-align: center;
 }
 
 .col-fourth {
@@ -27,32 +61,25 @@ img {
   width: 50%;
 }
 
-.text-center {
-  text-align: center;
+.width-half {
+  width: 50%;
 }
 
-.margin-ten-percent {
+.ta-left {
+  text-align: left;
+}
+
+.margin-lr-five-percent {
   margin-left: 10%;
   margin-right: 10%;
 }
 
-.padding-fifteen-percent {
-  padding-left: 20%;
-  padding-right: 20%;
-}
-
 .padding-right-twenty-percent {
-  padding-right: 20%;
+  /* padding-right: 100rem; */
 }
 
-.karla {
-  font-family: Karla, sans-serif;
-}
-
-.f-size-three-rem {
-  font-size: 3rem;
-}
-
-.f-size-eighty-percent-rem {
-  font-size: 0.8rem;
+#header {
+  margin: auto;
+  width: 60%;
+  margin-bottom: 2.5rem;
 }
