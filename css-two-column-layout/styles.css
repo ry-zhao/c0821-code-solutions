@@ -35,7 +35,7 @@ button {
   color: #d24e47;
   background-color: white;
   height: 2.5rem;
-  width: 12rem;
+  width: 11rem;
   margin: auto;
   margin-top: 2.5rem;
   font-weight: 700;
@@ -52,7 +52,6 @@ button {
 
 .col-full {
   width: 100%;
-  text-align: center;
 }
 
 .col-fourth {
