@@ -1,0 +1,73 @@
+a,
+p,
+h3 {
+  font-family: Avenir, sans-serif;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.col-half {
+  width: 50%;
+}
+
+.col-fourth {
+  width: 25%;
+}
+
+.logo {
+  height: 2rem;
+}
+
+.txt {
+  text-align: center;
+}
+
+.right-margin-2rem {
+  margin-right: 2rem;
+}
+
+.tb-padding-2p5rem {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.t-padding-4rem {
+  padding-top: 4rem;
+}
+
+.b-padding-6rem {
+  padding-bottom: 6rem;
+}
+
+.gray-6e {
+  color: #6e6e6e;
+}
+
+.gray-ff {
+  color: #fff;
+}
+
+.bc-gray-525351 {
+  background-color: #535251;
+}
+
+.bc-gray-fa {
+  background-color: #fafafa;
+}
+
+.bold {
+  font-weight: bold;
+}
