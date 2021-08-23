@@ -24,6 +24,11 @@ button {
   border-radius: 0.25rem;
 }
 
+#hero-container {
+  height: 740px;
+  position: relative;
+}
+
 .container {
   margin: auto;
   width: 100%;
@@ -60,10 +65,15 @@ button {
 .hero {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
-.overlay{
-
+.overlay {
+  position: absolute;
+  background: rgba(20, 20, 20, 0.3);
+  z-index: 2;
+  height: 100%;
+  width: 100%;
 }
 
 .avenir {
@@ -72,6 +82,10 @@ button {
 
 .fs-1rem {
   font-size: 1rem;
+}
+
+.ac-c {
+  align-content: center;
 }
 
 .jc-c {
