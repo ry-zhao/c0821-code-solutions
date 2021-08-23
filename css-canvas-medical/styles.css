@@ -4,6 +4,25 @@ h3 {
   font-family: Avenir, sans-serif;
 }
 
+span {
+  font-family: Avenir, sans-serif;
+  font-size: 1rem;
+}
+
+h1 {
+  font-family: "Tiempos Headline", serif;
+  font-weight: 300;
+  color: #6e6e6e;
+}
+
+button {
+  font-family: Avenir, sans-serif;
+  color: #fff;
+  background-color: #294464;
+  border: 0;
+  border-radius: 0.25rem;
+}
+
 .container {
   margin: auto;
   width: 100%;
@@ -27,21 +46,96 @@ h3 {
   width: 25%;
 }
 
+.img-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   height: 2rem;
 }
 
-.txt {
+.avenir {
+  font-family: Avenir, sans-serif;
+}
+
+.fs-1rem {
+  font-size: 1rem;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.width-7rem {
+  width: 7rem;
+}
+
+.height-3rem {
+  height: 3rem;
+}
+
+.txt-al-c {
   text-align: center;
 }
 
-.right-margin-2rem {
+.txt-al-r {
+  text-align: right;
+}
+
+.lheight-1p5rem {
+  line-height: 1.5rem;
+}
+
+.lheight-2rem {
+  line-height: 2rem;
+}
+
+.lheight-3rem {
+  line-height: 3rem;
+}
+
+.t-margin-2p5rem {
+  margin-top: 2.5rem;
+}
+
+.b-margin-p5rem {
+  margin-bottom: 0.5rem;
+}
+
+.b-margin-2rem {
+  margin-bottom: 2rem;
+}
+
+.b-margin-4rem {
+  margin-bottom: 4rem;
+}
+
+.r-margin-2rem {
   margin-right: 2rem;
+}
+
+.r-margin-2p5rem {
+  margin-right: 2.5rem;
+}
+
+.r-margin-3rem {
+  margin-right: 3rem;
+}
+
+.tb-padding-1rem {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .tb-padding-2p5rem {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.t-padding-2p5rem {
+  padding-top: 2.5rem;
 }
 
 .t-padding-4rem {
@@ -50,6 +144,19 @@ h3 {
 
 .b-padding-6rem {
   padding-bottom: 6rem;
+}
+
+.lr-padding-3rem {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.border-b-1px-e7e9ec {
+  border-bottom: 1px solid #e7e9ec;
+}
+
+.gray-a2 {
+  color: #a2a2a2;
 }
 
 .gray-6e {
@@ -66,6 +173,10 @@ h3 {
 
 .bc-gray-fa {
   background-color: #fafafa;
+}
+
+.bc-gray-ff {
+  background-color: #fff;
 }
 
 .bold {
