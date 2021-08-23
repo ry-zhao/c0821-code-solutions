@@ -17,6 +17,7 @@ h1 {
 
 button {
   font-family: Avenir, sans-serif;
+  font-size: 1rem;
   color: #fff;
   background-color: #294464;
   border: 0;
@@ -52,8 +53,17 @@ button {
   align-items: center;
 }
 
+.hero-container {
+  width: 888.88px;
+  margin: auto;
+}
+
 .logo {
   height: 2rem;
+}
+
+.hero {
+  height: 500px;
 }
 
 .avenir {
@@ -132,6 +142,11 @@ button {
 .tb-padding-2p5rem {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.tb-padding-4rem {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .t-padding-2p5rem {
