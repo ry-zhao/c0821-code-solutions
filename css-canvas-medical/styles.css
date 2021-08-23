@@ -53,17 +53,17 @@ button {
   align-items: center;
 }
 
-.hero-container {
-  width: 888.88px;
-  margin: auto;
-}
-
 .logo {
   height: 2rem;
 }
 
 .hero {
-  height: 500px;
+  height: 100%;
+  width: 100%;
+}
+
+.overlay{
+
 }
 
 .avenir {
