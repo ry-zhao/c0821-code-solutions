@@ -51,6 +51,13 @@ button {
   text-align: left;
 }
 
+#hero-button {
+  position: absolute;
+  z-index: 2;
+  left: 4rem;
+  bottom: 5.5rem;
+}
+
 .container {
   margin: auto;
   width: 100%;
