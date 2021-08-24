@@ -1,0 +1,22 @@
+body {
+  font-family: Barlow, sans-serif;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.col-fourth {
+  width: 25%;
+}
+
+.icon {
+  width: 20%;
+}
