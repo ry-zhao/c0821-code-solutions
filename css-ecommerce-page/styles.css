@@ -1,0 +1,60 @@
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+img {
+  object-fit: fill;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+span {
+  margin-right: 0.25rem;
+}
+
+.container {
+  margin: auto;
+  max-width: 75%;
+}
+
+.row {
+  display: flex;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.col-fifth {
+  width: 20%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.light-gray {
+  color: #e6e6e6;
+}
+
+.peach-bg {
+  background-color: #fff2e7;
+  border-radius: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.size-spacing {
+  border-left: 1.5px solid #e6e6e6;
+  padding-left: 0.25rem;
+}
+
+.height {
+  height: 22.5rem;
+}
+
+#header {
+  text-align: center;
+}
