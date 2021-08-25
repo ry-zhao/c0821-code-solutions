@@ -3,7 +3,7 @@ body {
 }
 
 img {
-  object-fit: fill;
+  object-fit: cover;
   width: 100%;
   margin-bottom: 0.5rem;
 }
@@ -53,6 +53,10 @@ span {
 
 .height {
   height: 22.5rem;
+}
+
+.margin-b {
+  margin-bottom: 1rem;
 }
 
 #header {
