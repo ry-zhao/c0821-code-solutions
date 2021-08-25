@@ -40,6 +40,17 @@ button {
   width: 50%;
 }
 
+#product-header {
+  color: white;
+  position: absolute;
+  top: 14rem;
+  left: 4rem;
+  font-size: 3rem;
+  z-index: 2;
+  margin: 0;
+  width: 60%;
+}
+
 #hero-txt {
   color: white;
   position: absolute;
