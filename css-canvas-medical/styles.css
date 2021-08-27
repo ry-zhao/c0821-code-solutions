@@ -24,50 +24,38 @@ button {
   border-radius: 0.25rem;
 }
 
-#hero-container {
+.hero-container {
   height: 600px;
   position: relative;
 }
 
-#hero-header {
-  color: white;
+.hero-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
-  font-size: 3rem;
   z-index: 2;
+}
+
+.hero-header {
+  color: white;
+  font-size: 3rem;
   margin: 0;
   width: 50%;
 }
 
-#product-header {
+.product-header {
   color: white;
-  position: absolute;
-  top: 14rem;
-  left: 4rem;
   font-size: 3rem;
-  z-index: 2;
   margin: 0;
   width: 60%;
 }
 
-#hero-txt {
+.hero-txt {
   color: white;
-  position: absolute;
-  top: 12rem;
-  left: 4rem;
   font-size: 1.15rem;
   line-height: 1.75rem;
-  z-index: 2;
   width: 50%;
   text-align: left;
-}
-
-#hero-button {
-  position: absolute;
-  z-index: 2;
-  left: 4rem;
-  bottom: 5.5rem;
 }
 
 .container {
