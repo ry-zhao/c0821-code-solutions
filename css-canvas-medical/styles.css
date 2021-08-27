@@ -121,15 +121,11 @@ button {
   font-family: Avenir, sans-serif;
 }
 
-.fs-1rem {
+.font-size-1rem {
   font-size: 1rem;
 }
 
-.ac-c {
-  align-content: center;
-}
-
-.jc-c {
+.justify-cont-c {
   justify-content: center;
 }
 
@@ -221,32 +217,28 @@ button {
   padding-right: 3rem;
 }
 
-.border-b-1px-e7e9ec {
+.border-b-1px-light-gray {
   border-bottom: 1px solid #e7e9ec;
 }
 
-.gray-a2 {
+.light-gray {
   color: #a2a2a2;
 }
 
-.gray-6e {
+.dark-gray {
   color: #6e6e6e;
 }
 
-.gray-ff {
+.white {
   color: #fff;
 }
 
-.bc-gray-525351 {
+.bc-dark-gray {
   background-color: #535251;
 }
 
-.bc-gray-fa {
+.bc-light-gray {
   background-color: #fafafa;
-}
-
-.bc-gray-ff {
-  background-color: #fff;
 }
 
 .bold {
