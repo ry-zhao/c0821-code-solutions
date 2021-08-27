@@ -1,6 +1,6 @@
 /* exported initial */
 // initial
-// input: array
+// input: array of elements
 // output: array of all elements except the last
 
 // PSEUDOCODE

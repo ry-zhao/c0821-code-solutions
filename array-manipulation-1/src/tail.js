@@ -1,6 +1,6 @@
 /* exported tail */
 // tail
-// input: array
+// input: array of elements
 // output: array of all elements after the first
 
 // PSEUDOCODE

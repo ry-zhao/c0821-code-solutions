@@ -1,6 +1,6 @@
 /* exported head */
 // head
-// input: array
+// input: array of elements
 // output: first element in array
 
 // PSEUDOCODE

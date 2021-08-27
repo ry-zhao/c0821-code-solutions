@@ -1,6 +1,6 @@
 /* exported reverse */
 // reverse
-// input: array
+// input: array of elements
 // output: array with same elements but in reverse order
 
 // PSEUDOCODE
