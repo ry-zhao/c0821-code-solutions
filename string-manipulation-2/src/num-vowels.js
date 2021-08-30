@@ -8,8 +8,7 @@
 // traverse every character in String
 //  -change character to lowercase and check if vowel
 //    -if so, increment output
-//      -break
-//    -if not, break
+//    -break
 // return output
 
 function numVowels(string) {
@@ -22,8 +21,6 @@ function numVowels(string) {
       case 'o':
       case 'u':
         output++;
-        break;
-      default:
         break;
     }
   }
