@@ -6,8 +6,6 @@
 // PSEUDOCODE
 // create storage for output
 // check if count is greater than array.length
-//  -if so, traverse array elements
-//    -append element to output
 //  -return output
 // create and store new Number value right (array.length - count)
 // traverse array from start to right
@@ -17,9 +15,6 @@
 function dropRight(array, count) {
   var output = [];
   if (count > array.length) {
-    for (var i = 0; i < array.length; i++) {
-      output.push(array[i]);
-    }
     return output;
   }
   var right = array.length - count;
