@@ -13,7 +13,7 @@
 //    -append word to temp
 //    -reset word value
 //  -else append character to word
-// append word to output
+// append word to temp
 // traverse array
 //  -traverse word by char from end to start
 //    -append to output
