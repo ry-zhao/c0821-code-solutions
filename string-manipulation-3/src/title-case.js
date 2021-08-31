@@ -107,7 +107,7 @@ function titleCase(title) {
   } else {
     output += wordList[0][0].toUpperCase();
     for (var j = 1; j < wordList[0].length; j++) {
-      output += wordList[0][j].toLowerCase();
+      output += wordList[0][j];
     }
   }
   if (wordList.length !== 1) {
@@ -130,7 +130,7 @@ function titleCase(title) {
     } else if (afterColon === true) {
       output += wordList[x][0].toUpperCase();
       for (var y = 1; y < wordList[x].length; y++) {
-        output += wordList[x][y].toLowerCase();
+        output += wordList[x][y];
       }
     } else if (wordList[x].length < 4) {
       for (var z = 0; z < minorWords.length; z++) {
@@ -141,14 +141,14 @@ function titleCase(title) {
         if (z === minorWords.length - 1) {
           output += wordList[x][0].toUpperCase();
           for (var a = 1; a < wordList[x].length; a++) {
-            output += wordList[x][a].toLowerCase();
+            output += wordList[x][a];
           }
         }
       }
     } else {
       output += wordList[x][0].toUpperCase();
       for (var b = 1; b < wordList[x].length; b++) {
-        output += wordList[x][b].toLowerCase();
+        output += wordList[x][b];
       }
     }
     if (x !== wordList.length - 1) {
