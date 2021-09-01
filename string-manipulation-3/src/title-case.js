@@ -21,25 +21,6 @@
 //    -append lowercased char to word
 // push word to wordList
 
-// check if first word in wordList is javascript
-//  -if so, append 'JavaScript' to output
-// else, check if it's 'javascript:'
-//  -if so, append 'JavaScript:' to output
-//  -set afterColon to true
-// else, check if it's 'api' to output
-//  -if so, append 'API'
-// else, check if it's 'api:' to output
-//  -if so, append 'API:'
-//  -set afterColon to true
-// else,
-//  -append first char capitalized to output
-//  -traverse rest of word
-//    -append char to output
-// check if length of wordList is 1
-//  -if not, append space
-//  -check if last char is ':'
-//  -if so, set afterColon to true
-
 // traverse wordList starting from index 1
 //  -check if first word in wordList is javascript
 //    -if so, append 'JavaScript'
@@ -55,6 +36,10 @@
 //    -if so, append first char capitalized to output
 //    -traverse rest of word
 //      -append char to output
+//  -else, check if word is first
+//    -if so, append capitalized first char to output
+//    -traverse rest of word
+//      -append chars to output
 //  -else, check if word is shorter than 4 char
 //    -if so, traverse minorWords
 //      -check if word is equal to minorWords[x]
@@ -94,29 +79,7 @@ function titleCase(title) {
     }
   }
   wordList.push(word);
-  if (wordList[0] === 'javascript') {
-    output += 'JavaScript';
-  } else if (wordList[0] === 'javascript:') {
-    output += 'JavaScript:';
-    afterColon = true;
-  } else if (wordList[0] === 'api') {
-    output += 'API';
-  } else if (wordList[0] === 'api:') {
-    output += 'API:';
-    afterColon = true;
-  } else {
-    output += wordList[0][0].toUpperCase();
-    for (var j = 1; j < wordList[0].length; j++) {
-      output += wordList[0][j];
-    }
-  }
-  if (wordList.length !== 1) {
-    output += ' ';
-    if (wordList[0][wordList[0].length - 1] === ':') {
-      afterColon = true;
-    }
-  }
-  for (var x = 1; x < wordList.length; x++) {
+  for (var x = 0; x < wordList.length; x++) {
     if (wordList[x] === 'javascript') {
       output += 'JavaScript';
     } else if (wordList[x] === 'javascript:') {
@@ -131,6 +94,11 @@ function titleCase(title) {
       output += wordList[x][0].toUpperCase();
       for (var y = 1; y < wordList[x].length; y++) {
         output += wordList[x][y];
+      }
+    } else if (x === 0) {
+      output += wordList[0][0].toUpperCase();
+      for (var c = 1; c < wordList[0].length; c++) {
+        output += wordList[0][c];
       }
     } else if (wordList[x].length < 4) {
       for (var z = 0; z < minorWords.length; z++) {
