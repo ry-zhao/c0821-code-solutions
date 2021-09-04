@@ -2,6 +2,20 @@
 //  input: n/a
 //  output: n/a
 
+//  create Array representing standard 52-card deck
+//  shuffle deck and assign shuffled Array to deck
+//  create and store an Array with two player Objects with name, cards, and score properties
+//  traverse players
+//    pop two cards from deck and push to player cards
+//  traverse players
+//    traverse cards
+//      add card value to score
+//  compare player scores
+//    if first player has higher score
+//      log "Cody wins"
+//    else
+//      log "Tim wins"
+
 console.log('Lodash is loaded:', typeof _ !== 'undefined');
 var deck = [{ rank: 'A', suits: 'Clubs' }, { rank: 2, suits: 'Clubs' },
   { rank: 3, suits: 'Clubs' }, { rank: 4, suits: 'Clubs' },
@@ -35,8 +49,50 @@ var deck = [{ rank: 'A', suits: 'Clubs' }, { rank: 2, suits: 'Clubs' },
   { rank: 'J', suits: 'Spades' }, { rank: 'Q', suits: 'Spades' },
   { rank: 'K', suits: 'Spades' }];
 
-console.log(deck);
-
 deck = _.shuffle(deck);
 
-console.log(deck);
+var players = [
+  {
+    name: 'Cody',
+    cards: [],
+    score: 0
+  },
+  {
+    name: 'Tim',
+    cards: [],
+    score: 0
+  }
+];
+
+for (var i = 0; i < players.length; i++) {
+  players[i].cards.push(deck.pop());
+  players[i].cards.push(deck.pop());
+}
+
+for (var j = 0; j < players.length; j++) {
+  for (var k = 0; k < players[j].cards.length; k++) {
+    switch (players[j].cards[k].rank) {
+      case 'A':
+        players[j].score += 11;
+        break;
+      case 'J':
+      case 'Q':
+      case 'K':
+        players[j].score += 10;
+        break;
+      default:
+        players[j].score += players[j].cards[k].rank;
+    }
+  }
+}
+
+console.log('Cody\'s score:', players[0].score);
+console.log('Tim\'s score:', players[1].score);
+
+if (players[0].score === players[1].score) {
+  console.log('Tied!');
+} else if (players[0].score > players[1].score) {
+  console.log('Cody wins!');
+} else {
+  console.log('Tim wins!');
+}
