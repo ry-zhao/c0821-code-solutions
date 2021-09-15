@@ -1,8 +1,6 @@
 var $h1 = document.querySelector('h1');
 var i = 4;
 
-var interval;
-
 function majorTom() {
   if (i > 1) {
     $h1.textContent = --i;
@@ -12,4 +10,4 @@ function majorTom() {
   }
 }
 
-interval = setInterval(majorTom, 1000);
+var interval = setInterval(majorTom, 1000);
