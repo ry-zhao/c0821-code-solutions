@@ -5,7 +5,7 @@ var interval;
 
 function majorTom() {
   if (i > 1) {
-    $h1.textContent = (--i).toString();
+    $h1.textContent = --i;
   } else {
     $h1.textContent = '~Earth Beeeelooowww Us~';
     clearInterval(interval);
