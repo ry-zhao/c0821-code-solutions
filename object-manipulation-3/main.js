@@ -17,82 +17,89 @@
 //      log "Tim wins"
 
 console.log('Lodash is loaded:', typeof _ !== 'undefined');
-var deck = [{ rank: 'A', suits: 'Clubs' }, { rank: 2, suits: 'Clubs' },
-  { rank: 3, suits: 'Clubs' }, { rank: 4, suits: 'Clubs' },
-  { rank: 5, suits: 'Clubs' },
-  { rank: 6, suits: 'Clubs' }, { rank: 7, suits: 'Clubs' },
-  { rank: 8, suits: 'Clubs' }, { rank: 9, suits: 'Clubs' },
-  { rank: 10, suits: 'Clubs' },
-  { rank: 'J', suits: 'Clubs' }, { rank: 'Q', suits: 'Clubs' },
-  { rank: 'K', suits: 'Clubs' }, { rank: 'A', suits: 'Diamonds' },
-  { rank: 2, suits: 'Diamonds' },
-  { rank: 3, suits: 'Diamonds' }, { rank: 4, suits: 'Diamonds' },
-  { rank: 5, suits: 'Diamonds' }, { rank: 6, suits: 'Diamonds' },
-  { rank: 7, suits: 'Diamonds' },
-  { rank: 8, suits: 'Diamonds' }, { rank: 9, suits: 'Diamonds' },
-  { rank: 10, suits: 'Diamonds' }, { rank: 'J', suits: 'Diamonds' },
-  { rank: 'Q', suits: 'Diamonds' },
-  { rank: 'K', suits: 'Diamonds' }, { rank: 'A', suits: 'Hearts' },
-  { rank: 2, suits: 'Hearts' }, { rank: 3, suits: 'Hearts' },
-  { rank: 4, suits: 'Hearts' },
-  { rank: 5, suits: 'Hearts' }, { rank: 6, suits: 'Hearts' },
-  { rank: 7, suits: 'Hearts' }, { rank: 8, suits: 'Hearts' },
-  { rank: 9, suits: 'Hearts' },
-  { rank: 10, suits: 'Hearts' }, { rank: 'J', suits: 'Hearts' },
-  { rank: 'Q', suits: 'Hearts' }, { rank: 'K', suits: 'Hearts' },
-  { rank: 'A', suits: 'Spades' }, { rank: 2, suits: 'Spades' },
-  { rank: 3, suits: 'Spades' }, { rank: 4, suits: 'Spades' },
-  { rank: 5, suits: 'Spades' },
-  { rank: 6, suits: 'Spades' }, { rank: 7, suits: 'Spades' },
-  { rank: 8, suits: 'Spades' }, { rank: 9, suits: 'Spades' },
-  { rank: 10, suits: 'Spades' },
-  { rank: 'J', suits: 'Spades' }, { rank: 'Q', suits: 'Spades' },
-  { rank: 'K', suits: 'Spades' }];
 
-deck = _.shuffle(deck);
-
-var players = [
-  {
-    name: 'Cody',
-    cards: [],
-    score: 0
-  },
-  {
-    name: 'Tim',
-    cards: [],
-    score: 0
-  }
-];
-
-for (var i = 0; i < players.length; i++) {
-  players[i].cards.push(deck.pop());
-  players[i].cards.push(deck.pop());
-}
-
-for (var j = 0; j < players.length; j++) {
-  for (var k = 0; k < players[j].cards.length; k++) {
-    switch (players[j].cards[k].rank) {
-      case 'A':
-        players[j].score += 11;
-        break;
-      case 'J':
-      case 'Q':
-      case 'K':
-        players[j].score += 10;
-        break;
-      default:
-        players[j].score += players[j].cards[k].rank;
+function createDeck() {
+  var deck = [];
+  var suits = ['Clubs', 'Diamonds', 'Hearts', 'Spades'];
+  var ranks = ['A', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K'];
+  for (var i = 0; i < suits.length; i++) {
+    for (var j = 0; j < ranks.length; j++) {
+      var card = {};
+      card.rank = ranks[j];
+      card.suit = suits[i];
+      deck.push(card);
     }
   }
+  return deck;
 }
 
-console.log('Cody\'s score:', players[0].score);
-console.log('Tim\'s score:', players[1].score);
+var deck = createDeck();
+deck = _.shuffle(deck);
 
-if (players[0].score === players[1].score) {
-  console.log('Tied!');
-} else if (players[0].score > players[1].score) {
-  console.log('Cody wins!');
-} else {
-  console.log('Tim wins!');
+var cody = {
+  name: 'Cody',
+  cards: [],
+  score: 0
+};
+
+var tim = {
+  name: 'Tim',
+  cards: [],
+  score: 0
+};
+
+var cass = {
+  name: 'Cass',
+  cards: [],
+  score: 0
+};
+
+var tj = {
+  name: 'TJ',
+  cards: [],
+  score: 0
+};
+
+var lfz = [cody, tim, cass, tj];
+
+play(lfz, 2);
+
+function play(players, number) {
+  var scores = [];
+  var winners = [];
+  for (var k = 0; k < players.length; k++) {
+    for (var l = 0; l < number; l++) {
+      players[k].cards.push(deck.pop());
+    }
+  }
+  for (var m = 0; m < players.length; m++) {
+    for (var n = 0; n < players[m].cards.length; n++) {
+      switch (players[m].cards[n].rank) {
+        case 'A':
+          players[m].score += 11;
+          break;
+        case 'J':
+        case 'Q':
+        case 'K':
+          players[m].score += 10;
+          break;
+        default:
+          players[m].score += players[m].cards[n].rank;
+      }
+    }
+    console.log(players[m].name + '\'s score: ' + players[m].score);
+    scores.push(players[m].score);
+  }
+  var max = _.max(scores);
+  for (var o = 0; o < players.length; o++) {
+    if (players[o].score === max) {
+      winners.push(players[o]);
+    }
+  }
+  if (winners.length > 1) {
+    console.log('Tied!');
+    play(winners, number);
+  } else {
+    console.log(winners[0].name + ' wins!');
+  }
 }
