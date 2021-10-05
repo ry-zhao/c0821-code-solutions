@@ -1,0 +1,489 @@
+    1  git config --global user.name "ry-zhao"
+    2  git config --global user.email "ryanzhao21@gmail.com"
+    3  git config --global --list
+    4  cd repos/c0821-code-solutions/
+    5  git status
+    6  git checkout master
+    7  cd repos/c0821-code-solutions/
+    8  cd ..
+    9  cd driving-game
+   10  git switch issue-2-turn-car 
+   11  git status
+   12  git restore .
+   13  git checkout master
+   14  git pull origin master
+   15  git branch
+   16  git branch issue-3-start-car
+   17  git switch issue-3-start-car 
+   18  git add .
+   19  git commit -m "Created JS function that moves car a few pixels."
+   20  git commit -m "Created JS function that moves car a few pixels." --no-verify
+   21  git add .
+   22  git commit -m "Created JS function that moves car a few pixels." --no-verify
+   23  git commit -m "Created JS function that moves car a few pixels."
+   24  git add .
+   25  git commit -m "Debugged."
+   26  git commit -m "Debugged." --no-verify
+   27  git push origin issue-3-start-car 
+   28  git status
+   29  git checkout master
+   30  git pull origin master
+   31  git status
+   32  git branch bird-game
+   33  git switch bird-game
+   34  git status
+   35  git add .
+   36  git commit -m "New bird game."
+   37  git add .
+   38  git commit -m "New bird game." --no-verify
+   39  git push origin bird-game
+   40  git checkout master
+   41  git status
+   42  git switch bird-game
+   43  git add .
+   44  git commit -m "Added hummer.gif to images directory."
+   45  git push origin bird-game
+   46  git checkout master
+   47  git switch bird-game
+   48  git checkout master
+   49  git restore .
+   50  git checkout master
+   51  cd repos/c0821-code-solutions/
+   52  git switch bird-game
+   53  cd ..
+   54  cd driving-game
+   55  git switch bird-game
+   56  git restore .
+   57  git add .
+   58  cd repos/driving-game/
+   59  git add .
+   60  cd repos/driving-game/
+   61  git status
+   62  git add *
+   63  git add.
+   64  cd repos/driving-game/
+   65  git add .
+   66  git status
+   67  git commit -m "Tweaks."
+   68  git add .
+   69  git commit -m "Tweaks."
+   70  git add .
+   71  git status
+   72  git commit -m "Tweaks."
+   73  git add .
+   74  git commit -m "Tweaks."
+   75  git push origin bird-game
+   76  clear
+   77  cd repos/c0821-code-solutions/
+   78  git branch http-messages
+   79  git switch http-messages
+   80  cd http-messages
+   81  git status
+   82  cd ..
+   83  git status
+   84  cd http-messages/
+   85  http https://example.com/
+   86  http https://example.com/ -v
+   87  clear
+   88  http --body GET https://jsonplaceholder.typicode.com/users > users.json
+   89  http --body GET https://example.com > index.html
+   90  cd
+   91  cd repos
+   92  cd c0821-code-solutions/
+   93  cd http-messages/
+   94  git status
+   95  git add .
+   96  ldr
+   97  lr
+   98  ld
+   99  mdr
+  100  pwd
+  101  dir 
+  102  dir > print
+  103  dir
+  104  git add .
+  105  git commit -m "Completed http-messages exercise."
+  106  git push origin http-messages
+  107  http example.com
+  108  http http://example.com
+  109  http http://example.com -v
+  110  clear
+  111  cd ..
+  112  git checkout master
+  113  git branch
+  114  git branch javascript-ajax
+  115  git switch javascript-ajax
+  116  clear
+  117  git status
+  118  clear
+  119  java
+  120  cpp
+  121  gcc
+  122  ruby -v
+  123  sudo
+  124  ruby -v
+  125  $ sudo apt-get install ruby-full
+  126  sudo apt-get install ruby-full
+  127  run apt-get update
+  128  sudo run apt-get update
+  129  $sudo run apt-get update
+  130  $ sudo run apt-get update
+  131  $ sudo apt-get install ruby-full
+  132  sudo run apt-get update
+  133  sudo apt-get install ruby-full
+  134  sudo apt-get update
+  135  sudo apt-get upgrade
+  136  ruby -v
+  137  cd repos/c0821-code-solutions/
+  138  git status
+  139  clear
+  140  GET https://pokeapi.co/api/v2/pokemon/cubone/
+  141  http https://pokeapi.co/api/v2/pokemon/cubone/
+  142  git status
+  143  git add .
+  144  git commit -m "Completed javascript-ajax exercise."
+  145  git push origin javascript-ajax 
+  146  git checkout master
+  147  cd repos/c0821-code-solutions/
+  148  cd api-test
+  149  cd
+  150  lr
+  151  ld
+  152  pd
+  153  cd
+  154  clear
+  155  pwd
+  156  cd repos/
+  157  cd ..
+  158  pwd
+  159  .
+  160  ls
+  161  cd repos
+  162  cd api-test
+  163  cd javascript-client/
+  164  npm install
+  165  npm link
+  166  npm install spoonacular_api --save
+  167  npm run build
+  168  npm install unirest --save
+  169  cd repos
+  170  git clone git@github.com:ry-zhao/ajax-project.git
+  171  cd ajax-project
+  172  npm ci
+  173  cd repos
+  174  cd ajax-project/
+  175  git restore .
+  176  git branch issue-1-user-can-add-recipes
+  177  git status
+  178  git switch issue-1-user-can-add-recipes 
+  179  git status
+  180  git restore .
+  181  git status
+  182  git add .
+  183  git commit -m "Create image element. #1"
+  184  git add .
+  185  git status
+  186  git commit -m "Create image element. #1"
+  187  git add .
+  188  git commit -m "Create unordered list representing ingredients. #1"
+  189  git add .
+  190  git commit -m "Create unordered list representing instructions. #1"
+  191  git add .
+  192  git commit -m "Create data object stored in localStorage. #1"
+  193  git add .
+  194  git commit -m "Create data object stored in localStorage. #1"
+  195  git add .
+  196  git commit -m "Create data model representing current recipe. #1"
+  197  git add .
+  198  git commit -m "Create data model representing current recipe. #1"
+  199  git commit -m "Create data model representing current recipe. #1" --no-verify
+  200  git add .
+  201  git commit -m "Add event listener to title input that fires upon user input an updates title element to correspond with input value. #1"
+  202  git commit -m "Add event listener to title input that fires upon user input an updates title element to correspond with input value. #1" --no-verify
+  203  git add .
+  204  git commit -m "Add event listener to image URL input that fires upon user input and updates image element's src attribute to correspond with input value. #1"
+  205  git commit -m "Add event listener to image URL input that fires upon user input and updates image element's src attribute to correspond with input value. #1" --no-verify
+  206  git add .
+  207  git commit -m "Add event listener to add ingredient button that fires upon click and updates the list to include the value of the add ingredient input. #1" --no-verify
+  208  git add .
+  209  git commit -m "Add event listener to add instruction button that fires upon click and updates the list to include the value of the add instruction input. #1" --no-verify
+  210  git add .
+  211  git commit -m "Completed Issue #1."
+  212  git add .
+  213  git commit -m "Completed Issue #1."
+  214  git add .
+  215  git commit -m "Fixed form reset. #1"
+  216  git push origin issue-1-user-can-add-recipes 
+  217  git checkout master
+  218  git pull origin master
+  219  cd repos/ajax-project/
+  220  git add .
+  221  git commit -m "Update code to add edit and delete buttons to the end of every <li> element in edit view. #3"
+  222  git add .
+  223  git commit -m "Add event listener to lists so that when edit button is clicked, the <li> element is replaced with input element and check button for user to update item. #3"
+  224  git add .
+  225  git commit -m "Add event listener to lists so that when delete button is clicked, the <li> element is removed from the list. #3"
+  226  git add .
+  227  git commit -m "Add event listener to lists so that when delete button is clicked, the <li> element is removed from the list. #3"
+  228  git push origin issue-3-user-can-edit-recipes 
+  229  git status
+  230  git add .
+  231  git commit -m "Completed Issue #3."
+  232  git status
+  233  git checkout master
+  234  git pull origin master
+  235  git status
+  236  javac
+  237  java
+  238  $java
+  239  $javac
+  240  $ijodsf
+  241  cd repos/ajax-project/
+  242  git restore .
+  243  git status
+  244  cd repos/ajax-project/
+  245  git status
+  246  git branch
+  247  git branch issue-4-user-can-search-recipes
+  248  git branch
+  249  git switch issue-4-user-can-search-recipes 
+  250  git status
+  251  git add .
+  252  git commit -m "Create new view for searches. #4"
+  253  git checkout master
+  254  git status
+  255  git switch issue-4-user-can-search-recipes 
+  256  git add .
+  257  git commit -m "Create search form with search bar and button. #4"
+  258  cd repos/ajax-project/
+  259  git restore .
+  260  cd repos/ajax-project/
+  261  git status
+  262  git restore .
+  263  git checkout master
+  264  git status
+  265  cd repos/ajax-project/
+  266  git switch issue-4-user-can-search-recipes 
+  267  ruby
+  268  cd repos/ajax-project/
+  269  git add .
+  270  git commit -m "Create function that populates search view with first 10 results when 'load' event fires. #4"
+  271  git add .
+  272  git commit -m "Create function that populates search view with first 10 results when 'load' event fires. #4"
+  273  git add .
+  274  git commit -m "Create function that populates search view with first 10 results when 'load' event fires. #4"
+  275  git status
+  276  git add .
+  277  git commit -m "Debug. #4"
+  278  git add .
+  279  git commit -m "Debug. #4"
+  280  git push origin issue-4-user-can-search-recipes 
+  281  git add .
+  282  git commit -m "Set response type for requests to JSON. #4"
+  283  git push origin issue-4-user-can-search-recipes 
+  284  git status
+  285  clear
+  286  cd repos/ajax-project/
+  287  git add .
+  288  git commit -m "Add event listener so that when \"COPY RECIPE\" button is clicked, the app swaps to new recipe view. #5"
+  289  git status
+  290  git add .
+  291  git commit -m "Populate new recipe view with title, image, ingredients, and instructions of said recipe. #5"
+  292  git add .
+  293  git commit -m "Completed issue #5."
+  294  git push origin issue-5-user-can-copy-and-save-recipes 
+  295  cd repos
+  296  pwd
+  297  ld
+  298  lr
+  299  ls
+  300  git remote add origin git@github.com:ry-zhao/code-signal-challenges.git
+  301  echo "# code-signal-challenges" >> README.md git init git add README.md git commit -m "first commit" git branch -M main git remote add origin git@github.com:ry-zhao/code-signal-challenges.git git push -u origin main
+  302  ls
+  303  cd code-signal-challenges
+  304  git remote add origin git@github.com:ry-zhao/code-signal-challenges.git
+  305  cd ..
+  306  git clone git@github.com:ry-zhao/code-signal-challenges.git
+  307  ccode-signal-challenges
+  308  cd code-signal-challenges
+  309  git add .
+  310  git pull origin master
+  311  git pull origin main
+  312  git status
+  313  cd ..
+  314  cd code-signal-solutions
+  315  git status
+  316  git add .
+  317  git commit -m "add function completed."
+  318  git push origin main
+  319  git add .
+  320  git commit -m "centuryFromYear function completed."
+  321  git push origin main
+  322  git status
+  323  git push origin main
+  324  git status
+  325  git add .
+  326  git commit -m "checkPanlindrome function completed."
+  327  git push origin main
+  328  git add . 
+  329  git commit -m "adjacentElementsProduct function completed."
+  330  git status
+  331  git add .
+  332  git status
+  333  git commit -m "shapeArea function completed."
+  334  git push origin main
+  335  git status
+  336  git add .
+  337  git commit -m "makeArrayConsecutive2 function completed."
+  338  git push origin main
+  339  cd ..
+  340  cd ruby-koans
+  341  git remote add origin git@github.com:ry-zhao/ruby-koans.git
+  342  git clone git@github.com:ry-zhao/ruby-koans.git
+  343  git status
+  344  ld
+  345  lr
+  346  ls
+  347  cd ..
+  348  ls
+  349  cd ruby-koans
+  350  git clone git@github.com:ry-zhao/ruby-koans.git
+  351  ls
+  352  cd ruby-koans
+  353  git status
+  354  cd repos/c0821-code-solutions/
+  355  git status
+  356  clear
+  357  git add .
+  358  git commit -m "Completed es6-const-let exercise."
+  359  git push origin es6-const-let 
+  360  git status
+  361  git checkout master
+  362  git branch es6-template-literals
+  363  git switch es6-template-literals 
+  364  git status
+  365  git add .
+  366  git commit -m "Completed es6-template-literals exercise."
+  367  git push origin es6-template-literals 
+  368  git status
+  369  git checkout master
+  370  git branch es6-destructuring
+  371  git switch es6-destructuring 
+  372  git status
+  373  git add .
+  374  git commit -m "Completed es6-destructuring exercise."
+  375  git status
+  376  git push origin es6-destructuring 
+  377  powershell ./Install-ConEmuTheme.ps1 -ConfigPath /path/to/exported/setting/ConEmu.xml -Operation Add -ThemePathOrName themes\moe-dark.xml
+  378  cd repos
+  379  cd c0821-code-solutions/
+  380  git status
+  381  cd ..
+  382  rmdir ConEmu-Color-Themes/
+  383  rm -r ConEmu-Color-Themes/
+  384  ls
+  385  cd repos
+  386  cd c0821-code-solutions/
+  387  git status
+  388  git checkout master
+  389  git pull origin master
+  390  git status
+  391  git branch es6-arrow-functions
+  392  git switch es6-arrow-functions 
+  393  git status
+  394  git add .
+  395  git commit -m "Completed es6-arrow-functions exercise."
+  396  git status
+  397  git push origin es6-arrow-functions 
+  398  cd repos/c0821-code-solutions/
+  399  git status
+  400  git checkout master
+  401  git status
+  402  git branch command-line-basics
+  403  git switch command-line-basics 
+  404  git status
+  405  clear
+  406  cd command-line-basics/
+  407  pwd
+  408  man 
+  409  man man
+  410  man cat
+  411  clear
+  412  ls
+  413  cat laziness.txt
+  414  cat impatience.txt
+  415  cat hubris.txt
+  416  cat laziness.txt impatience.txt hubris.txt 
+  417  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  418  cat three-virtues
+  419  cat three-virtues.txt 
+  420  man ls
+  421  ls -a
+  422  ls -F
+  423  man ls
+  424  ls lfz-staff
+  425  ls -aF lfz-staff > lfz-staff/contents.txt
+  426  ls -F lfz-staff
+  427  pwd
+  428  man pwd
+  429  pwd
+  430  pwd > i-was-here-.txt
+  431  ls
+  432  cat i-was-here.txt
+  433  man echo
+  434  echo hi
+  435  echo 'Hello'
+  436  echo didello didello
+  437  echo Hello, World
+  438  echo Hello, World! > hello.txt
+  439  hello.txt
+  440  cat hello.txt
+  441  ls
+  442  cat hello.txt 
+  443  man touch
+  444  clear
+  445  man touch
+  446  touch > tag-youre-it.txt
+  447  touch tag-youre-it.txt
+  448  ls
+  449  cat tag-youre-it.txt 
+  450  touch snoot/boop.txt
+  451  ls snoot/
+  452  man mkdir
+  453  mkdir parent
+  454  ls
+  455  man mkdir
+  456  mkdir -p parent child
+  457  ls
+  458  man mkdir
+  459  mkdir p parent/child/grandchild
+  460  mkdir -p parent/child/grandchild
+  461  cd parent
+  462  cd child
+  463  cd ..
+  464  touch parent/child/grandchild/.gitkeep 
+  465  cd parent/child/grandchild/
+  466  ls
+  467  cd ../../..
+  468  ls -a
+  469  ls -a parent
+  470  ls -a parent/child/grandchild/
+  471  man touch
+  472  man mv
+  473  mv pokiemans pokemon
+  474  ls
+  475  man rm
+  476  rm lol.txt
+  477  man rm
+  478  rm -r kill-me
+  479  ls
+  480  man cp
+  481  cp and-then.txt no-and-then.tx
+  482  ls
+  483  cat no-and-then.tx
+  484  man mv
+  485  mv no-and-then.tx no-and-then.txt
+  486  ls
+  487  man history
+  488  history
+  489  history > command-history.txt
