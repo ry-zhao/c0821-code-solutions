@@ -1,0 +1,15 @@
+User can read notes
+  traverse data.notes
+    log out number and note
+
+User can create a note
+  add property with key nextId (increment afterwards) and property process.argv at 3
+  write stringified data to data.json
+
+User can delete a note
+  delete property of notes with key of process.argv at 3
+  write stringified data to data.json
+
+User can update a note
+  update property of notes with key of process.argv at 3 with value of process.argv at 4
+  write stringified data to data.json
