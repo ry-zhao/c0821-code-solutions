@@ -15,12 +15,12 @@ app.get('/api/grades', (req, res) => {
 });
 
 app.post('/api/grades', (req, res) => {
-  const response = req.body;
-  response.id = nextId;
-  grades[nextId++] = response;
-  res.status(201).json(response);
+  req.body.id = nextId;
+  grades[nextId++] = req.body;
+  res.status(201).json(req.body);
 });
 
 app.listen(3000, () => {
+  // eslint-disable-next-line no-console
   console.log('Express server now listening at port 3000...');
 });
