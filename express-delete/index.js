@@ -32,7 +32,6 @@ app.get('/api/grades', (req, res) => {
 
 app.delete('/api/grades/:id', (req, res) => {
   const id = parseInt(req.params.id);
-  console.log(grades[id]);
   if (!grades[id]) {
     res.sendStatus(400);
   } else {
