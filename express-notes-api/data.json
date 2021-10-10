@@ -1,0 +1,25 @@
+{
+  "nextId": 21,
+  "notes": {
+    "2": {
+      "id": 2,
+      "content": "The event loop, this, closures, and prototypal inheritance are special about JavaScript."
+    },
+    "5": {
+      "id": 5,
+      "content": "In JavaScript, the value of `this` is determined when a function is called; not when it is defined."
+    },
+    "6": {
+      "id": 6,
+      "content": "No it's not."
+    },
+    "18": {
+      "content": "Node is written largely in C and C++",
+      "id": 18
+    },
+    "20": {
+      "content": "Hello there!",
+      "id": 20
+    }
+  }
+}
