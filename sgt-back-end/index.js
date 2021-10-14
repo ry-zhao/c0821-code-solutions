@@ -92,11 +92,12 @@ ex.post('/api/grades', (req, res, next) => {
   const sql = `
     insert into "grades" ("name", "course", "score")
     values ($1, $2, $3)
+    returning *
   `;
   const params = [req.body.name, req.body.course, score];
   db.query(sql, params)
     .then(result => {
-      res.status(201).send();
+      res.status(201).json(result.rows[0]);
     })
     .catch(err => {
       console.error(err);
@@ -211,5 +212,6 @@ ex.delete('/api/grades/:gradeId', (req, res, next) => {
 });
 
 ex.listen(3000, () => {
+  /* eslint-disable no-console */
   console.log('Now listening on PORT 3000...');
 });
