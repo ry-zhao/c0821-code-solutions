@@ -1,0 +1,29 @@
+.row {
+  display: flex;
+}
+
+.col {
+  flex-basis: 100%;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.margin-top-1rem {
+  margin-top: 1rem;
+}
+
+.watch-container {
+  flex-wrap: wrap;
+}
+
+.watch {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 5rem;
+  border: solid 3px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
