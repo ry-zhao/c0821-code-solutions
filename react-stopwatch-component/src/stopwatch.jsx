@@ -8,7 +8,6 @@ class Stopwatch extends React.Component {
     this.start = this.start.bind(this);
     this.stop = this.stop.bind(this);
     this.reset = this.reset.bind(this);
-    this.interval = 0;
   }
 
   render() {
