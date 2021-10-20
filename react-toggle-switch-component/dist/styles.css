@@ -1,0 +1,34 @@
+.container {
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+  border: solid 2px #000;
+  position: relative;
+  display: flex;
+}
+
+.switch {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  border: solid 2px #000;
+  position: absolute;
+  top: -2px;
+}
+
+.switch.off {
+  left: -2px;
+}
+
+.switch.on {
+  right: -2px;
+}
+
+.container.off {
+  background-color: #e2e2e2;
+}
+
+.container.on {
+  background-color: #6aa84f;
+}
