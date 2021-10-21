@@ -10,17 +10,22 @@ class ToggleSwitch extends React.Component {
   }
 
   render() {
-    const { isOn } = this.state;
-    if (isOn) {
-      return (
-        <div className="container on" onClick={this.toggle}>
-        <div className="switch on"></div>
-      </div>);
+    let status;
+    if (this.state.isOn) {
+      status = 'on';
+    } else {
+      status = 'off';
     }
     return (
-      <div className="container off" onClick={this.toggle}>
-        <div className="switch off"></div>
-      </div>);
+      <div className="row">
+        <div className={`container ${status}`} onClick={this.toggle}>
+          <div className={`switch ${status}`}></div>
+        </div>
+        <div className="label">
+          {status.toUpperCase()}
+        </div>
+      </div>
+    );
   }
 
   toggle() {
