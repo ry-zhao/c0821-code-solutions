@@ -12,12 +12,18 @@ class Accordion extends React.Component {
   render() {
     return (
       <div className="accordion-frame" onClick={this.handleClick}>
-        {this.props.entries.map(entry => (
-          <div className="entry" key={entry.topic}>
-            <h3 className="topic" entry={this.props.entries.indexOf(entry)}>{entry.topic}</h3>
-            <div className="details hidden">{entry.details}</div>
-          </div>
-        ))}
+        {this.props.entries.map((entry, index) => {
+          let details = '';
+          if (index === Number(this.state.currentEntry)) {
+            details = <div className="details">{entry.details}</div>;
+          }
+          return (
+            <div className="entry" key={index}>
+              <h3 className="topic" entry={index}>{entry.topic}</h3>
+              {details}
+            </div>
+          );
+        })}
       </div>
     );
   }
@@ -37,11 +43,9 @@ class Accordion extends React.Component {
     this.setState(prevState => ({
       currentEntry: event.target.getAttribute('entry')
     }));
-    event.target.nextSibling.className = 'details';
   }
 
   closeEntry(event) {
-    document.querySelector(`h3[entry="${this.state.currentEntry}"]`).nextSibling.className = 'details hidden';
     if (event.target.getAttribute('entry') !== this.state.currentEntry) {
       this.openEntry(event);
     } else {
