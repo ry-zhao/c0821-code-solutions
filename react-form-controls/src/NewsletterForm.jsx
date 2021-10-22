@@ -18,13 +18,13 @@ class NewsletterForm extends React.Component {
     );
   }
 
-  handleChange() {
+  handleChange(event) {
     this.setState(prevState => (
       { value: event.target.value }
     ));
   }
 
-  handleSubmit() {
+  handleSubmit(event) {
     console.log(this.state);
     event.preventDefault();
   }
