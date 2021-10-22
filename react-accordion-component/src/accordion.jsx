@@ -9,17 +9,6 @@ class Accordion extends React.Component {
     this.closeEntry = this.closeEntry.bind(this);
   }
 
-  // render() {
-  //   return (
-  //     <div className="accordion-frame" onClick={this.handleClick}>
-  //       <div className="entry" key="Hypertext Markup Language" onDoubleClick={this.closeEntry}>
-  //         <h3 className="topic" entry="0" id="0">Hypertext Markup Language</h3>
-  //         <div className="details hidden">Bitch I&apos;m an accordion</div>
-  //       </div>
-  //     </div>
-  //   );
-  // }
-
   render() {
     return (
       <div className="accordion-frame" onClick={this.handleClick}>
@@ -52,8 +41,6 @@ class Accordion extends React.Component {
   }
 
   closeEntry(event) {
-    // const current = document.querySelector(`h3[entry="${this.state.currentEntry}"]`);
-    // console.log(current);
     document.querySelector(`h3[entry="${this.state.currentEntry}"]`).nextSibling.className = 'details hidden';
     if (event.target.getAttribute('entry') !== this.state.currentEntry) {
       this.openEntry(event);
