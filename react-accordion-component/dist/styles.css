@@ -1,0 +1,27 @@
+* {
+  font-family: sans-serif;
+}
+
+.accordion-frame {
+  width: 20rem;
+}
+
+.topic {
+  border: solid 2px black;
+  background-color: #ddd;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: normal;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+
+.details {
+  border: solid 2px black;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
