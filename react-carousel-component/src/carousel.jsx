@@ -8,20 +8,26 @@ class Carousel extends React.Component {
     this.shiftImage = this.shiftImage.bind(this);
     this.state = {
       currentImage: 0,
-      interval: setInterval(this.rotateImages, 3000)
+      interval: 0
     };
   }
 
   render() {
-    const buttons = [];
     const current = Number(this.state.currentImage);
-    for (let i = 0; i < this.props.images.length; i++) {
-      if (i === current) {
-        buttons.push(<div className="button current" key={i} data-index={i} />);
+    // for (let i = 0; i < this.props.images.length; i++) {
+    // if (i === current) {
+    //   buttons.push(<div className="button current" key={i} data-index={i} />);
+    // } else {
+    //   buttons.push(<div className="button" key={i} data-index={i} />);
+    // }
+    // }
+    const buttons = this.props.images.map((image, index) => {
+      if (index === current) {
+        return (<div className="button current" key={index} data-index={index} />);
       } else {
-        buttons.push(<div className="button" key={i} data-index={i} />);
+        return (<div className="button" key={index} data-index={index} />);
       }
-    }
+    });
     const image = <img src={this.props.images[current]} />;
     return (
       <div className="box" onClick={this.shiftImage}>
@@ -41,6 +47,12 @@ class Carousel extends React.Component {
         </div>
       </div>
     );
+  }
+
+  componentDidMount() {
+    this.setState(prevState => ({
+      interval: setInterval(this.rotateImages, 3000)
+    }));
   }
 
   rotateImages() {
