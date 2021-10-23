@@ -16,8 +16,8 @@ i {
 
 .box {
   display: flex;
-  height: 20rem;
-  width: 30rem;
+  width: 45rem;
+  height: 30rem;
   border: 2px solid black;
 }
 
