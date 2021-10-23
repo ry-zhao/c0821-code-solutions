@@ -11,6 +11,11 @@ i {
   vertical-align: middle;
 }
 
+.error {
+  font-size: small;
+  margin-top: 0.25rem;
+}
+
 .red {
   color: red;
 }
