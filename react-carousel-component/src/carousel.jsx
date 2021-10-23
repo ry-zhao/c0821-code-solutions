@@ -14,13 +14,6 @@ class Carousel extends React.Component {
 
   render() {
     const current = Number(this.state.currentImage);
-    // for (let i = 0; i < this.props.images.length; i++) {
-    // if (i === current) {
-    //   buttons.push(<div className="button current" key={i} data-index={i} />);
-    // } else {
-    //   buttons.push(<div className="button" key={i} data-index={i} />);
-    // }
-    // }
     const buttons = this.props.images.map((image, index) => {
       if (index === current) {
         return (<div className="button current" key={index} data-index={index} />);
