@@ -1,0 +1,33 @@
+* {
+  font-family: sans-serif;
+}
+
+label {
+  display: block;
+}
+
+i {
+  font-size: large;
+  vertical-align: middle;
+}
+
+.error {
+  font-size: small;
+  margin-top: 0.25rem;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.mar-r-p5rem {
+  margin-right: 0.5rem;
+}
+
+.mar-b-p25rem {
+  margin-bottom: 0.25rem;
+}
