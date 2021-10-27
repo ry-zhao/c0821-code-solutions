@@ -53,7 +53,6 @@ app.post('/api/auth/sign-in', (req, res, next) => {
       where "username" = $1
   `;
   const params = [username];
-  let payload;
 
   db.query(sql, params)
     .then(result => {
@@ -61,14 +60,12 @@ app.post('/api/auth/sign-in', (req, res, next) => {
         throw new ClientError(401, 'invalid login');
       }
       const { userId, username } = result.rows[0];
-      payload = { userId, username };
-      return argon2.verify(result.rows[0].hashedPassword, password);
+      return argon2.verify(result.rows[0].hashedPassword, password)
+        .then(isMatching => isMatching ? { userId, username } : null);
     })
-    .then(isMatching => {
-      if (isMatching) {
-        const token = jwt.sign(payload, process.env.TOKEN_SECRET);
-        const response = { payload: payload, token: token };
-        res.status(200).json(response);
+    .then(payload => {
+      if (payload) {
+        res.status(200).json({ payload: payload, token: jwt.sign(payload, process.env.TOKEN_SECRET) });
       } else {
         throw new ClientError(401, 'invalid login');
       }
